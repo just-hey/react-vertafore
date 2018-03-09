@@ -5,13 +5,16 @@ import CartFooter from './CartFooter';
 import CartItems from './CartItems';
 
 class ShoppingCart extends Component {
-
+  constructor (props) {
+    super(props)
+  }
+  
   render() {
     return (
       <div>
         <CartHeader />
         <CartItems />
-        <CartFooter />
+        <CartFooter copyright={ this.props.copyright }/>
       </div>
     );
   }

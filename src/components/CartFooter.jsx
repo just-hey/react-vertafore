@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
 
 class CartFooter extends Component {
+  constructor (props) {
+    super(props)
+  }
 
-  render() {
+  render(props) {
     return (
       <footer className="page-footer">
         <div className="container">
@@ -14,7 +17,7 @@ class CartFooter extends Component {
         </div>
         <div className="footer-copyright">
           <div className="container">
-            &copy; Never
+            &copy; {this.props.copyright}
           </div>
         </div>
       </footer>

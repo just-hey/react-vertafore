@@ -24,6 +24,6 @@ storiesOf('Timer', module)
 
 storiesOf('ShoppingCart', module)
   .add('Header', () => <CartHeader />)
-  .add('Footer', () => <CartFooter />)
+  .add('Footer', () => <CartFooter copyright='2018'/>)
   .add('Items', () => <CartItems />)
-  .add('ShoppingCart', () => <ShoppingCart />)
+  .add('ShoppingCart', () => <ShoppingCart copyright='2018'/>)
