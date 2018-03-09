@@ -11,6 +11,7 @@ import Timer from '../components/Timer';
 import CartHeader from '../components/CartHeader';
 import CartFooter from '../components/CartFooter';
 import CartItems from '../components/CartItems';
+import ShoppingCart from '../components/ShoppingCart';
 
 
 storiesOf('Message', module)
