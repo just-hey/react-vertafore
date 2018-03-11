@@ -8,6 +8,7 @@ import { linkTo } from '@storybook/addon-links'
 
 import Message from '../components/Message'
 import Timer from '../components/Timer'
+import Echo from '../components/Echo'
 import CartHeader from '../components/CartHeader'
 import CartFooter from '../components/CartFooter'
 import CartItems from '../components/CartItems'
@@ -25,6 +26,7 @@ storiesOf('Message', module)
   .add('Hello World', () => <Message text="Hello world" />)
   .add("What's the time?", () => <Message text={new Date().toString()} />)
   .add('Custom', () => <Message text="New thingy" />)
+  .add('Echo', () => <Echo />)
 
 storiesOf('Timer', module)
   .add('Show', () => <Timer />)
