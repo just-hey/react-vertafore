@@ -10,6 +10,7 @@ class ShoppingCart extends Component {
   }
 
   render() {
+    
     return (
       <div>
         <CartHeader />
