@@ -26,4 +26,4 @@ class CartFooter extends Component {
 
 }
 
-export default CartFooter;
+export default CartFooter
