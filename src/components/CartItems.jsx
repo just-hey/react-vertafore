@@ -9,7 +9,6 @@ class CartItems extends Component {
   }
 
   render() {
-    console.log('cartItemS log',this.props)
     return (
       <div className="container">
         <h1>Items</h1>
