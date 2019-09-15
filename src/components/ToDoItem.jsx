@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
-// import Switch from '@material-ui/core/Switch'
-import {Switch} from 'react-materialize'
+import { Switch } from '@material-ui/core'
 
 class ToDoItem extends Component {
   constructor (props) {
@@ -11,12 +10,17 @@ class ToDoItem extends Component {
     return (
       <div className="collection-item">
         <div className="row">
-          {/* <div className="col s2">{this.props.id}</div>
-          <div className="col s4">{this.props.name}</div>
-          <div className="col s6">{this.props.task}</div> */}
-          <div className="col s1">{1}</div>
-          <div className="col s4">{'thing'}</div>
-          <div className="col s6">{'description of what it is you need to do'}</div>
+          <div className="col s1">{ this.props.item.id }</div>
+          <div className="col s3">{ this.props.item.name }</div>
+          <div className="col s6">{ this.props.item.task }</div>
+          <div className="col s1">
+            <Switch  
+              value="checked" 
+              checked={ this.props.item.isComplete } 
+              onClick={ (e) => this.props.changeStatus(this.props.item.id, this.props.item.isComplete) } 
+              inputProps={ { 'aria-label': 'primary checkbox' } } 
+            />
+          </div>
         </div>
       </div>
     )
