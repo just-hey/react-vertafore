@@ -11,13 +11,13 @@ class CartFooter extends Component {
         <div className="container">
           <div className="row">
             <div className="col 16 s12">
-              <h5 className="white-text"> Shop ALL THE THINGZ</h5>
+              <h5 className="white-text"> Do all the things</h5>
             </div>
           </div>
         </div>
         <div className="footer-copyright">
           <div className="container">
-            &copy; {this.props.copyright}
+            &copy; { this.props.copyright }
           </div>
         </div>
       </footer>

@@ -12,7 +12,7 @@ class CartHeader extends React.Component {
           <div className="container">
             <div className="nav-wrapper">
               <div className="col s12">
-                <a href="/" className="brand-logo">Shopping Cart</a>
+                <a href="/" className="brand-logo">To Do</a>
               </div>
             </div>
           </div>

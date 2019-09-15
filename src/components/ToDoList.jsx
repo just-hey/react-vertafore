@@ -1,9 +1,8 @@
 import React, { Component } from 'react'
 
-import CartItem from './CartItem'
+import ToDoItem from './ToDoItem'
 
-
-class CartItems extends Component {
+class ToDoList extends Component {
   constructor (props) {
     super(props)
   }
@@ -11,14 +10,14 @@ class CartItems extends Component {
   render() {
     return (
       <div className="container">
-        <h1>Items</h1>
+        <h1>Items To Do</h1>
         <div className="collection">
           <div className="collection-item row grey lighten-3">
             <div className="col s8">Product</div>
             <div className="col s2">Price</div>
             <div className="col s2">Quantity</div>
           </div>
-          { this.props.products.map(item => <CartItem items={ item.product } key={item.id} qty={item.quantity} />) }
+          { this.props.products.map(item => <ToDoItem items={ item.name } key={item.id} task={item.task} />) }
         </div>
       </div>
     )
@@ -26,4 +25,4 @@ class CartItems extends Component {
 
 }
 
-export default CartItems
+export default ToDoList
