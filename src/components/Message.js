@@ -1,9 +1,7 @@
 import React from 'react'
 import 'materialize-css/dist/css/materialize.min.css'
 
-const Message = ({
-  text
-}) => {
+const Message = ({ text }) => {
   return (
     <div className="container">
       <div className="row">

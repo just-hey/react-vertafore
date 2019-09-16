@@ -12,39 +12,34 @@ class AddItem extends Component {
 
   submitForm = (e) => {
     e.preventDefault()
-    let item = this.props.products.find(el => el.id == this.state.selectedItem)
-    let data = {
-      product: item,
-      quantity: this.state.selectedItemQty
-    }
-    this.props.itemAdded(data)
+    // logic for form submission
   }
 
   handleChange = (event) => this.setState({ [event.target.name]: event.target.value })
 
   render () {
-    return <form onSubmit={this.submitForm} className="container">
-        <h3>Add To Do Item</h3>
-        <Row>
-          <Input
-            style={ { width: 300 } }
-            id="adornment-amount"
-            label="name"
-            onChange={ (e) => this.handleChange(e) }
-            value={ this.state.name }
-          />
-        </Row>
-        <Row>
-          <Input
-            style={ { width: 500 } }
-            id="adornment-amount"
-            label="task"
-            onChange={ (e) => this.handleChange(e) }
-            value={ this.state.task }
-          />
-        </Row>
-        <Button waves='light'>add</Button>
-      </form>
+    return <form onSubmit={ this.submitForm } className="container">
+            <h3>Add To Do Item</h3>
+            <Row>
+              <Input
+                style={ { width: 300 } }
+                id="adornment-amount"
+                label="name"
+                onChange={ (e) => this.handleChange(e) }
+                value={ this.state.name }
+              />
+            </Row>
+            <Row>
+              <Input
+                style={ { width: 500 } }
+                id="adornment-amount"
+                label="task"
+                onChange={ (e) => this.handleChange(e) }
+                value={ this.state.task }
+              />
+            </Row>
+            <Button waves='light'>add</Button>
+          </form>
   }
 
 }

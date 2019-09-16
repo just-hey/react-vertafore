@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import { BrowserRouter as Router, Redirect, Route, Switch, withRouter } from 'react-router-dom'
 import Header from './components/Header'
 import ToDoList from './components/ToDoList'
 import AddItem from './components/AddItem'

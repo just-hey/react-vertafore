@@ -12,6 +12,10 @@ let items = [
   { id: 3, name: 'Smiles', task: 'Brush your teeth for at least 2 minutes and make sure you floss too!', isComplete: false }
 ]
 
+const addItem = () => {
+  
+}
+
 storiesOf('ToDo', module)
   .add('Header', () => <Header />)
   .add('AddItem', () => <AddItem items={ items } itemAdded={ () => addItem }/>)
