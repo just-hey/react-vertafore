@@ -15,9 +15,14 @@ class AddItem extends Component {
     // logic for form submission
   }
 
-  handleChange = (event) => this.setState({ [event.target.name]: event.target.value })
+  handleChange = (event) => {
+    
+    this.setState({ [event.target.name]: event.target.value })
+    console.log('typing?', [event.target.name], event.target.value)
+  }
 
   render () {
+    console.log('load?')
     return <form onSubmit={ this.submitForm } className="container">
             <h3>Add To Do Item</h3>
             <Row>
